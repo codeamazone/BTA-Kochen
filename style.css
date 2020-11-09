@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   line-height: 1.5;
 }
@@ -15,6 +15,7 @@ body {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 /*li {
@@ -27,6 +28,19 @@ nav {
 
 .show {
   display: block;
+  position: fixed;
+  top: 64px;
+  left: 0;
+  width: 100%;
+  background: white;
+  text-align: center;
+  height: 100vh;
+  box-shadow: 0px -2px 3px rgba(0, 0, 0, 0.301);
+}
+
+.show li {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 header {
@@ -35,6 +49,13 @@ header {
   align-items: center;
   height: 64px;
   padding: 0 16px;
+  position: fixed;
+  background: white;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.301);
+  z-index: 9999;
 }
 
 nav a {
@@ -171,6 +192,18 @@ form .button {
   border-bottom-left-radius: 0;
 }
 
+.social,
+.legal {
+  display: block;
+  text-align: center;
+}
+
+.social ul {
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+}
+
 @media (min-width: 960px) {
   #knopf {
     display: none;
@@ -192,11 +225,22 @@ form .button {
   .card {
     width: 45%;
   } */
-}
 
-/*
+  /*
 @media (min-width: 1280px) {
   body {
     background: yellow;
   }
 } */
+
+  .legal ul {
+    display: flex;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+  }
+}
