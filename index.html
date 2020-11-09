@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <!--Jedes HTML-Dokument hat einen Kopf (head) und dort kommen die Metadaten rein -->
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tolle Rezepte für Nerds</title>
+    <meta
+      name="description"
+      content="Fünf-Minuten-Delikatessen für Menschen im Homeoffice"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Den Viewport einzustellen nicht vergessen-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <!--Jedes HTML-Dokument hat einen Kopf-->
+
+  <body>
+    <header>
+      <!-- Logo ist verlinkt -->
+      <a href="#">
+        <img src="img\logo.png" alt="Logo Kochen" height="40" />
+      </a>
+
+      <button id="knopf">
+        <img src="img\menu.svg" alt="Burger-Menü" height="40" />
+      </button>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Rezepte</a>
+          </li>
+          <li>
+            <a href="#">Kategorien</a>
+          </li>
+          <li>
+            <a href="#">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="homescreen">
+        <h1>Die besten Rezepte für Dev-Mädchen</h1>
+        <p>Es gibt mehr als Pizza & Ravioli</p>
+        <a href="#neue-Rezepte" class="button">Entdecke den heißen Scheiß</a>
+      </section>
+
+      <section class="Rezepte" id="neue-Rezepte">
+        <h2>Der neueste heiße Scheiß</h2>
+        <div class="row">
+          <!--Karte beginnt hier-->
+          <article class="card">
+            <img src="img\kuerbissuppe.jpg" alt="Kürbissuppe" />
+            <h3>Vegane Kürbissuppe</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam
+              debitis blanditiis veritatis corporis repellendus earum, deserunt
+              laboriosam?
+            </p>
+            <a href="#" class="button">Hell yeah!</a>
+          </article>
+          <!--Karte endet hier-->
+
+          <!--Karte beginnt hier-->
+          <article class="card">
+            <img src="img\kuerbissuppe.jpg" alt="Kürbissuppe" />
+            <h3>Vegane Kürbissuppe</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam
+              debitis blanditiis veritatis corporis repellendus earum, deserunt
+              laboriosam?
+            </p>
+            <a href="#" class="button">Hell yeah!</a>
+          </article>
+          <!--Karte endet hier-->
+
+          <!--Karte beginnt hier-->
+          <article class="card">
+            <img src="img\kuerbissuppe.jpg" alt="Kürbissuppe" />
+            <h3>Vegane Kürbissuppe</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam
+              debitis blanditiis veritatis corporis repellendus earum, deserunt
+              laboriosam?
+            </p>
+            <a href="#" class="button">Hell yeah!</a>
+          </article>
+          <!--Karte endet hier-->
+          <!--Karte beginnt hier-->
+          <article class="card">
+            <img src="img\kuerbissuppe.jpg" alt="Kürbissuppe" />
+            <h3>Vegane Kürbissuppe</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam
+              debitis blanditiis veritatis corporis repellendus earum, deserunt
+              laboriosam?
+            </p>
+            <a href="#" class="button">Hell yeah!</a>
+          </article>
+          <!--Karte endet hier-->
+        </div>
+        <!--Reihe endet hier-->
+      </section>
+    </main>
+
+    <aside id="sidebar">
+      <h2>Du willst immer wissen, was geht?</h2>
+      <p>Hol dir unseren Newsletter</p>
+      <form action="" method="get">
+        <input
+          type="email"
+          name="newsletter"
+          id="subscriber"
+          placeholder="Deine E-Mail-Adresse"
+        />
+        <button type="submit" class="button">Ja, bitte!</button>
+      </form>
+    </aside>
+
+    <script src="js\menu.js"></script>
+  </body>
+</html>

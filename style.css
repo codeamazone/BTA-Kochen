@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  line-height: 1.5;
+}
+
+#knopf {
+  background: white;
+  border: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/*li {
+  margin: 0 10px;
+}*/
+
+nav {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  padding: 0 16px;
+}
+
+nav a {
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 10px;
+  padding: 5px;
+}
+
+nav a:hover {
+  color: #374a67;
+}
+
+.homescreen {
+  background-image: url('img/intro.jpg');
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.button {
+  background-color: white;
+  padding: 1rem;
+  color: #374a67;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid #374a67;
+  border-radius: 5px;
+  box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
+}
+
+.button:hover {
+  background-color: #374a67;
+  color: white;
+}
+
+.rezepte {
+  text-align: center;
+}
+
+.card {
+  border-radius: 3px;
+  border: 1px #374a67;
+  box-shadow: 0px 5px 6px 0 rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin: 1rem;
+  overflow: hidden;
+  /*padding-bottom: 50pxs;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+   */
+}
+
+.card p {
+  color: #828282;
+  padding: 10px;
+  text-shadow: 1px 1px 3px;
+}
+
+.card img {
+  width: 100%;
+  /* macht die Bildecken rund - Alternative zu overflow: hidden in card
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px; */
+}
+
+.card .button {
+  background-color: #374a67;
+  color: white;
+  display: block; /*macht sich so breit, wie er kann*/
+  margin: 10px;
+}
+
+.card .button:hover {
+  background-color: white;
+  color: #374a67;
+}
+
+h2 {
+  text-align: center;
+}
+
+#sidebar {
+  text-align: center;
+  font-weight: 500;
+  font-size: larger;
+  color: white;
+  background-color: #04122b;
+  padding: 3rem 1rem;
+}
+
+#subscriber {
+  padding: 1rem;
+  border-width: 0;
+  min-width: 200px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+/* ::-moz-placeholder {
+  color: red;
+  opacity: 1;
+} */
+
+::placeholder {
+  color: black;
+  opacity: 1;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+form .button {
+  /*margin: -4px;*/
+  border-width: 0;
+  border-left: 1px solid #04122b;
+  box-shadow: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+@media (min-width: 960px) {
+  #knopf {
+    display: none;
+  }
+
+  nav {
+    display: block;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  .row {
+    display: flex;
+    /* flex-wrap: wrap; */
+  }
+  /* für wrap bei .row --> bricht um, wenn mehr als 2 in einer Reihe
+  .card {
+    width: 45%;
+  } */
+}
+
+/*
+@media (min-width: 1280px) {
+  body {
+    background: yellow;
+  }
+} */
